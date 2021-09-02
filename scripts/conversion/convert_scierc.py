@@ -38,6 +38,9 @@ def convert_doc(orig_doc):
         for rel in relations:
             head_start = rel[0] - offset
             head_end = rel[1] - offset
+            print(orig_id)
+            print(rel[0], rel[1])
+            print('offset', offset)
             head_idx = entity_mapping[(head_start, head_end)]
 
             tail_start = rel[2] - offset
